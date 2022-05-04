@@ -3,25 +3,30 @@ body{
     display: flex; 
     justify-content: center;
 }
-.text{
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 30px;
+.link{
+    position: relative;
+    color: #f4f4f4;
+    text-decoration: none;
+    z-index: 1;
+    padding: 0 0.2rem;
+    transition: color 0.2s;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(
-        transparent 0%,
-        transparent 90%,
-        hotpink 90%,
-        hotpink 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-position-x: right;
-    transition: background-size 300ms;
+    font-size: 40px;
 }
 
-.text:hover{
-    background-size: 100% 100%;
-    background-position-x: left;
+.link::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 92% 0 0 0;
+    background: #58a6ff;
+    transition: inset .2s;
+}
+
+.link:hover{
+    color: #0d1117;
+}
+
+.link:hover::after{
+    inset: 0 0 0 0;
 }
