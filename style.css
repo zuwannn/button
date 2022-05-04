@@ -3,30 +3,3 @@ body{
     display: flex; 
     justify-content: center;
 }
-.link{
-    position: relative;
-    color: #f4f4f4;
-    text-decoration: none;
-    z-index: 1;
-    padding: 0 0.2rem;
-    transition: color 0.2s;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-}
-
-.link::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 92% 0 0 0;
-    background: #58a6ff;
-    transition: inset .2s;
-}
-
-.link:hover{
-    color: #0d1117;
-}
-
-.link:hover::after{
-    inset: 0 0 0 0;
-}
