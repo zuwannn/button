@@ -4,25 +4,3 @@ body{
     justify-content: center;
 }
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    color: white;
-    width: 30vh;
-    height: 10vh;
-    background: linear-gradient(
-        45deg, #6969ff, #c669ff
-    );
-    animation: hue-rotate 2s linear infinite alternate;
-}
-
-@keyframes hue-rotate {
-    to {
-        filter: hue-rotate(90deg);
-    }
-}
